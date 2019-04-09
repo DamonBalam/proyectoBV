@@ -10,6 +10,25 @@ html {
    img{
         max-width: 100%;
    }
+   p{
+        font-size: 14px;
+        line-height: 2;
+   }
+   .boton{
+        background-color: #00b8e4;
+        padding: 10px 60px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        transition: background-color .3s ease-in-out;
+   }
+   .boton:hover{
+     background-color: #0a7e9b;
+   }
    .site-header{
         padding: 20px 0;
    }
@@ -17,10 +36,12 @@ html {
    .contenedor{
         max-width: 1200px;
         margin: 0 auto;
+        overflow: auto;
    }
 
    /* navegacion     */
    .barra{
+     margin-top: 40px;
         background-color: #db008d;
    }
    .navegacion-principal a{
@@ -39,3 +60,106 @@ html {
    .navegacion-principal a:hover{
         background-color: #00b8e4;
    }
+   /* contenedores principales */
+   .contenido-principal,
+   .sidebar{
+        padding: 20px;
+        margin-top: 40px;
+   }
+   @media (min-width: 768px){
+     .contenido-principal{
+          width: 70%;
+          float: left;
+          padding-right:0 60px 0 0; 
+        }
+        .sidebar{
+          margin-top: 40px;
+          width: 30%;
+          float: right;
+          padding: 0;
+        }
+   }
+   /* entradas */
+   h2{
+        color: #00b8e4;
+        margin-bottom: 20px;
+   }
+   .entrada{
+     margin-bottom: 60px;
+
+   }
+   .entrada:last-of-type{
+        margin-bottom: 0;
+   }
+   .entrada img{
+        display: block;
+   }
+   @media (min-width: 480px){
+        .entrada img{
+             width: 300px;
+             float: left;
+             margin: 0 30px 0 0;
+        }
+   }
+   .entrada p{
+        text-align: justify;
+   }
+
+   /* sidebar */
+   .sidebar ul{
+        list-style: none;
+        padding: 0;
+
+   }
+.sidebar ul li{
+     
+     padding: 10px;
+}
+.sidebar ul li:hover{
+     background-color: #00b8e4;
+}
+.sidebar ul li a{
+   color: #00b8e4;
+   font-size: 18px;
+   text-decoration: none; 
+}
+.sidebar ul li:hover a{
+     color: white;
+}
+.footer-sitio{
+     background-color: #db008d;
+     padding-top:40px;
+     margin-top: 60px;
+     color: white;
+     text-align: center;
+}
+.footer-sitio h2{
+     color: white;
+}
+.footer-sitio a{
+     color: white;
+     text-decoration: none;
+     font-size: 22px;
+     margin-right: 20px;
+}
+.footer-sitio a:last-of-type{
+     margin-right:0;
+}
+@media (min-width: 768px){
+     .footer-sitio .nosotros{
+          float: left;
+          width: 30%;
+          text-align: left;
+     }
+     .footer-sitio .menu{
+          float: right;
+          width: 50%;
+          text-align: right;
+     }
+}
+.copyright{
+     background-color: #960a65;
+     margin-top: 50px;
+     margin-bottom: 0;
+     padding: 20px 0;
+}
